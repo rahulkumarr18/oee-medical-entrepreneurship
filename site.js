@@ -38,7 +38,7 @@
   // scroll reveals
   if (!reduce && 'IntersectionObserver' in window) {
     var els = Array.prototype.slice.call(document.querySelectorAll(
-      '.section-head, .manifesto p, .net-card, .sessions li, .checks li, .person, .show-card, .collab, .prose, .grid-2 > *, .cta-inner'
+      '.section-head, .manifesto p, .net-card, .stop, .checks li, .person, .show-card, .collab, .prose, .grid-2 > *, .cta-inner'
     ));
     els.forEach(function (el, i) {
       el.classList.add('reveal');
@@ -50,6 +50,15 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     els.forEach(function (el) { io.observe(el); });
+  }
+
+  // program journey: light the stop nearest the middle of the viewport
+  var stops = document.querySelectorAll('.journey .stop');
+  if (stops.length && 'IntersectionObserver' in window) {
+    var jo = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { en.target.classList.toggle('on', en.isIntersecting); });
+    }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
+    stops.forEach(function (s) { jo.observe(s); });
   }
 
   // pointer light on cards
