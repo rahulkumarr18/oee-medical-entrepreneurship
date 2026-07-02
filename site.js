@@ -61,6 +61,22 @@
     stops.forEach(function (s) { jo.observe(s); });
   }
 
+  // program journey: fill the connecting line as you scroll through it
+  var journey = document.querySelector('.journey');
+  var jfill = journey && journey.querySelector('.j-fill');
+  if (journey && jfill && !reduce) {
+    var updateFill = function () {
+      var r = journey.getBoundingClientRect();
+      var vh = window.innerHeight || 800;
+      var prog = Math.max(0, Math.min(1, (vh * 0.5 - r.top) / (r.height || 1)));
+      var maxH = journey.clientHeight - 14 - 64;
+      jfill.style.height = Math.max(0, prog * maxH) + 'px';
+    };
+    window.addEventListener('scroll', updateFill, { passive: true });
+    window.addEventListener('resize', updateFill);
+    updateFill();
+  }
+
   // pointer light on cards
   if (window.matchMedia && window.matchMedia('(pointer:fine)').matches) {
     document.querySelectorAll('.net-card').forEach(function (card) {
