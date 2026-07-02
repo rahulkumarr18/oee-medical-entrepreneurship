@@ -199,6 +199,14 @@ section{padding:clamp(52px,7.5vw,92px) 0}
 /* thin rule divider */
 .rule{border:0;border-top:1px solid var(--line);margin:0}
 
+/* partners logo wall */
+.logo-wall{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.logo-tile{border:1px solid var(--line);border-radius:var(--r);background:var(--paper);min-height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:26px 22px;transition:transform .2s,border-color .2s,box-shadow .2s}
+.logo-tile:hover{transform:translateY(-3px);border-color:#C3CEF0;box-shadow:0 22px 46px -30px rgba(85,102,230,.4)}
+.logo-tile img{max-height:44px;width:auto}
+.logo-tile .wordmark{font-family:var(--sans);font-weight:700;font-size:30px;letter-spacing:-.02em;color:#049FD9;line-height:1}
+.logo-tile .lt-role{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--slate-2)}
+
 /* team email */
 .p-email{display:inline-block;margin-top:6px;font-size:12.5px;color:var(--peri-ink);word-break:break-word}
 .p-email:hover{text-decoration:underline}
