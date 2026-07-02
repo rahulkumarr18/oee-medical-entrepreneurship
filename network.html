@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -37,13 +37,22 @@
 
 <main id="main">
 
-<div class="page-head">
+<div class="page-head" style="border-bottom:0;padding-bottom:8px;">
   <div class="wrap">
-    <p class="kicker">The ecosystem</p>
-    <h1>A map of who is around you</h1>
-    <p>UMass Chan sits inside one of the densest healthcare innovation regions in the country. Worcester on one end, Boston and Cambridge on the other, and a lot of people in between worth knowing. The point of this elective is to make that map legible, and then to introduce you to it.</p>
+    <p class="kicker">The region</p>
+    <h1>Who does what, and where</h1>
+    <p>UMass Chan sits in Worcester, about an hour west of one of the busiest healthcare-innovation corridors in the country. The elective helps students understand who does what, where ideas go, and who to talk to next.</p>
   </div>
 </div>
+
+<section class="map-hero" style="padding-top:clamp(16px,2vw,28px);padding-bottom:clamp(24px,3.5vw,44px);border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <figure class="map-fig">
+      <canvas id="map-canvas" role="img" aria-label="Animated map of the Massachusetts healthcare innovation network: UMass Chan in Worcester connected west-to-east to Boston and Cambridge, Harvard Medical School, Boston University, Tufts, UMass Lowell, Nucleate, incubators, founders, investors, and student teams."></canvas>
+    </figure>
+    <p class="section-intro" style="font-size:13px;color:var(--slate-2);margin-top:10px;">Worcester on the left, Boston and Cambridge on the right, and the people in between. Drag your cursor across the map to move through it.</p>
+  </div>
+</section>
 
 <section>
   <div class="wrap">
@@ -67,7 +76,7 @@
     <div class="section-head">
       <p class="kicker">The region</p>
       <h2>Groups we aim to connect with</h2>
-      <p class="section-intro">These are the schools and communities across Greater Massachusetts we want to bring students into contact with. We describe them as an ecosystem we are building relationships within, not as formal partners.</p>
+      <p class="section-intro">These are the schools and communities across Greater Massachusetts we want to bring students into contact with. We describe them as a community we are building relationships within, not as formal partners.</p>
     </div>
     <div class="sub-grid">
       <div class="collab"><div class="name">UMass Chan Medical School</div><div class="role">Home campus, Worcester</div></div>
@@ -85,10 +94,10 @@
 
 <section>
   <div class="wrap grid-2">
-    <div><h2>Network capital</h2></div>
+    <div><h2>People to follow up with</h2></div>
     <div class="prose">
-      <p>The reason to spend six evenings on this is simple. You finish with a working picture of the regional ecosystem and the introductions to go with it: names you can email, people who will take the call because you met them over dinner.</p>
-      <p>That is the kind of thing that is hard to build from scratch during residency and easy to build now, while a room of founders and investors is showing up specifically to meet students.</p>
+      <p>The reason to spend six evenings on this is simple. You finish with a working picture of the region and a handful of people you can actually email, ones who will take the call because you met them over dinner.</p>
+      <p>That is hard to put together from scratch during residency, and easy to start now, while a room of founders and investors is showing up specifically to meet students.</p>
     </div>
   </div>
 </section>
@@ -96,7 +105,7 @@
 <section class="cta-band">
   <div class="wrap cta-inner">
     <p class="kicker">Get involved</p>
-    <h2>Get in the room</h2>
+    <h2>Meet the first cohort</h2>
     <p>The introductions start in Fall 2026. Twenty-five seats.</p>
     <a class="btn btn-solid btn-lg" href="join.html">How to join</a>
   </div>
@@ -127,5 +136,6 @@
 </footer>
 
 <script src="site.js?v=3"></script>
+<script src="net.js?v=5"></script>
 </body>
 </html>
