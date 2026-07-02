@@ -3,25 +3,39 @@
 Website for the Medical Entrepreneurship & Innovation Optional Enrichment Elective
 at UMass Chan Medical School (T.H. Chan School of Medicine).
 
-A single-page static site focused on the networking side of the program: the
-speaker-and-dinner series and the people students get to meet across the New
-England healthcare innovation ecosystem.
+Live: https://rahulkumarr18.github.io/oee-medical-entrepreneurship/
 
-## Files
-- `index.html` — the whole site (hero, about, network, program, team, join)
-- `styles.css` — styling
-- `.nojekyll` — tells GitHub Pages to serve files as-is
+## What it is
+A multi-page static site focused on the networking side of the elective: the
+evening speaker-and-dinner series and the people students get to meet across the
+Massachusetts / New England healthcare innovation ecosystem.
 
-No build step. Open `index.html` in a browser, or run a static server:
+## Pages
+- `index.html` — home, with the animated network hero
+- `about.html` — the curricular gap and who it's for
+- `program.html` — the six Fall 2026 sessions and outcomes
+- `network.html` — the regional ecosystem
+- `showcase.html` — student showcase (Coming Fall 2026)
+- `team.html` — faculty sponsor, student leads, speakers
+- `join.html` — eligibility and contact
 
+## Assets
+- `styles.css` — blue / periwinkle design system (edit colors/type at `:root`)
+- `net.js` — the animated hero network (vanilla canvas; respects prefers-reduced-motion)
+- `site.js` — nav, scroll reveals, hero intro
+- `.nojekyll` — serve files as-is on GitHub Pages
+
+No build step. Run a static server to preview:
 ```
 python3 -m http.server 8000
 ```
 
-## Editing
-- Program details, sessions, and team live in `index.html`.
-- Colors and type are at the top of `styles.css` (`:root`).
+## Adding headshots
+Team avatars currently show initials. To add a photo, replace the initials in a
+`.person .avatar` (in `team.html`) with `<img src="images/NAME.jpg" alt="NAME">`.
+Square images look best.
 
 ## Team
-Faculty sponsor: Nathaniel Hafer, PhD. Student leads: Sasha Hussain (primary
+Faculty sponsor: Nathaniel Hafer, PhD (UMass Center for Clinical and Translational
+Science; Program in Molecular Medicine). Student leads: Sasha Hussain (primary
 contact), Rahul Kumar, Jielu Yu.

@@ -3,33 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#7A142A">
-<title>Medical Entrepreneurship & Innovation OEE · UMass Chan</title>
-<meta name="description" content="A Medical Entrepreneurship & Innovation elective at UMass Chan Medical School. An evening speaker-and-dinner series that connects medical students with the founders, investors, and builders of the New England healthcare innovation ecosystem.">
+<meta name="theme-color" content="#052049">
+<title>Medical Entrepreneurship &amp; Innovation OEE · UMass Chan</title>
+<meta name="description" content="A Medical Entrepreneurship & Innovation elective at UMass Chan Medical School. Evening dinners, candid cases, and introductions to founders, investors, and physician-builders across the Massachusetts healthcare innovation ecosystem.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Medical Entrepreneurship & Innovation OEE · UMass Chan">
-<meta property="og:description" content="An elective built around the people who turn clinical insight into companies. Fewer lectures, more introductions.">
+<meta property="og:description" content="Bring a clinical problem. Leave with people to call. An evening elective connecting medical students with the Massachusetts healthcare innovation ecosystem.">
+<meta property="og:url" content="https://rahulkumarr18.github.io/oee-medical-entrepreneurship/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Medical Entrepreneurship & Innovation OEE · UMass Chan">
+<meta name="twitter:description" content="Bring a clinical problem. Leave with people to call.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=1">
+<link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-head">
   <div class="wrap nav">
-    <a href="#top" class="brand" aria-label="Medical Entrepreneurship OEE home">
-      <span class="brand-mark">ME&amp;I</span>
-      <span class="brand-text">Medical Entrepreneurship<br>&amp; Innovation OEE</span>
+    <a href="index.html" class="brand" aria-label="Medical Entrepreneurship and Innovation OEE, home">
+      <span class="brand-mark">MEI</span>
+      <span class="brand-text"><b>Medical Entrepreneurship</b>&amp; Innovation OEE · UMass Chan</span>
     </a>
     <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
     <nav class="links" id="nav-links">
-      <a href="#about">About</a>
-      <a href="#network">The network</a>
-      <a href="#program">Program</a>
-      <a href="#team">Team</a>
-      <a href="#join" class="btn btn-solid">Join</a>
+      <a href="about.html">About</a>
+      <a href="program.html">Program</a>
+      <a href="network.html">Network</a>
+      <a href="showcase.html">Showcase</a>
+      <a href="team.html">Team</a>
+      <a href="join.html" class="btn btn-solid">Join</a>
     </nav>
   </div>
 </header>
@@ -37,160 +42,123 @@
 <main id="main">
 
 <!-- Hero -->
-<section class="hero" id="top">
-  <div class="wrap">
-    <p class="eyebrow">UMass Chan Medical School · T.H. Chan School of Medicine</p>
-    <h1>Medical Entrepreneurship<br>&amp; Innovation</h1>
-    <p class="sub">A physician's introduction to healthcare innovation, built around the people who actually do it.</p>
-    <p class="lede">An Optional Enrichment Elective that puts medical students in the same room as the founders, investors, and builders turning clinical insight into companies. Fewer lectures. More introductions.</p>
-    <div class="hero-cta">
-      <a href="#join" class="btn btn-solid">Join the Fall 2026 cohort</a>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">UMass Chan Medical School · T.H. Chan School of Medicine</p>
+      <h1><span class="hl-line">Medical students, meet the</span> <em class="hl-line">people who build healthcare.</em></h1>
+      <p class="sub">An evening elective built around dinners, candid cases, and introductions: founders, investors, physician-builders, incubators, and student teams across Worcester and Boston.</p>
+      <div class="hero-cta">
+        <a href="join.html" class="btn btn-solid btn-lg">Join the Fall 2026 cohort</a>
+      </div>
+      <ul class="facts" aria-label="At a glance">
+        <li><span class="f-n">Fall 2026</span><span class="f-l">First cohort</span></li>
+        <li><span class="f-n">6</span><span class="f-l">Evening sessions</span></li>
+        <li><span class="f-n">25</span><span class="f-l">Students</span></li>
+        <li><span class="f-n">Worcester + Boston</span><span class="f-l">Where we meet</span></li>
+      </ul>
     </div>
-    <ul class="facts" aria-label="At a glance">
-      <li><span class="f-n">Fall 2026</span><span class="f-l">First cohort</span></li>
-      <li><span class="f-n">6</span><span class="f-l">Evening sessions</span></li>
-      <li><span class="f-n">25</span><span class="f-l">Students</span></li>
-      <li><span class="f-n">Worcester + Boston</span><span class="f-l">Where we meet</span></li>
-    </ul>
+    <figure class="hero-fig">
+      <canvas id="net-canvas" role="img" aria-label="An animated map of the Massachusetts healthcare innovation network, connecting UMass Chan in Worcester with Boston and Cambridge, Harvard Medical School, Boston University, Tufts, UMass Lowell, Nucleate, incubators, founders, investors, and student teams."></canvas>
+    </figure>
   </div>
 </section>
 
-<!-- About -->
-<section id="about" class="band">
-  <div class="wrap grid-2">
-    <div class="col-head">
-      <h2>Physicians see the problems first</h2>
-    </div>
-    <div class="col-body">
-      <p>Doctors spot unmet needs before anyone else. Very few are ever shown how one of those needs becomes a device, a diagnostic, or a company. That gap is what this elective closes.</p>
-      <p>The core curriculum covers the science and the medicine. This covers what comes after the idea: founders and scientific advisors, biotech and medical devices, digital health and diagnostics, tech transfer, incubators, and how ventures get funded. It runs as a series of evening dinners with people who have built and backed real companies, and it is meant for the curious, not only for people already set on starting something.</p>
-    </div>
+<!-- Manifesto -->
+<section class="manifesto band">
+  <div class="wrap">
+    <p class="m1">Most physicians notice problems before anyone else. Few get shown what happens after the observation.</p>
+    <p class="m2">This elective is the part that comes after the idea: how a frustration at the bedside becomes a device, a diagnostic, a company, or a change in policy, and who you have to know to get there. Bring a clinical problem. <em>Leave with people to call.</em></p>
   </div>
 </section>
 
-<!-- Network (the focus) -->
-<section id="network">
+<!-- Program preview -->
+<section>
   <div class="wrap">
-    <div class="section-head">
-      <p class="kicker">The point</p>
-      <h2>The point is the network</h2>
-      <p class="section-intro">Every session ends the same way: dinner, and a room full of people worth knowing. Students leave with real contacts across the New England innovation ecosystem, the kind you can call during residency and long after.</p>
-    </div>
-    <div class="net-grid">
-      <div class="net-card"><h3>Physician-founders</h3><p>Doctors who have started biotech, device, and digital-health companies, and can tell you what the path actually looks like.</p></div>
-      <div class="net-card"><h3>Investors</h3><p>Venture partners and angels who fund early healthcare companies and decide what gets built.</p></div>
-      <div class="net-card"><h3>Biotech &amp; medtech leaders</h3><p>Operators from drug discovery, diagnostics, and medical devices across the New England corridor.</p></div>
-      <div class="net-card"><h3>Incubators &amp; accelerators</h3><p>The people who run tech transfer, incubators, and accelerators where clinical ideas get their start.</p></div>
-      <div class="net-card"><h3>Nucleate</h3><p>An introduction to the national bio-entrepreneurship community for students who want to go deeper.</p></div>
-      <div class="net-card"><h3>Peer schools</h3><p>Meet-ups with innovation groups at Harvard, Tufts, and BU medical schools, UMass Lowell engineering, and Harvard Business School healthcare clubs.</p></div>
-    </div>
-    <p class="net-note">Network capital: you finish with a map of the regional ecosystem and the introductions to go with it.</p>
-  </div>
-</section>
-
-<!-- Program -->
-<section id="program" class="band">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="kicker">Fall 2026</p>
-      <h2>Six evenings</h2>
-      <p class="section-intro">Every other Wednesday, 6:00 to 7:30 PM, in the Albert Sherman Center on the Worcester campus. Thirty minutes of talk, thirty of questions, thirty over dinner. The last session moves to Boston/Cambridge for an off-site networking night.</p>
+    <div class="section-top">
+      <div>
+        <p class="kicker">Fall 2026</p>
+        <h2>Six evenings</h2>
+      </div>
+      <a class="more" href="program.html">See the full program</a>
     </div>
     <ol class="sessions">
-      <li><span class="s-date">Sep 16</span><div class="s-body"><h3>The healthcare innovation landscape</h3><p>Kickoff and a working primer on the business model canvas.</p><span class="s-by">Nathaniel Hafer, PhD</span></div></li>
-      <li><span class="s-date">Sep 30</span><div class="s-body"><h3>Drug discovery and the pharmaceutical path</h3><p>How a therapeutic actually gets made, and how it differs from biotech.</p><span class="s-by">Alan Jacobson, PhD · co-developer of Ataluren</span></div></li>
-      <li><span class="s-date">Oct 14</span><div class="s-body"><h3>Physician as founder</h3><p>Building in biotech and medical devices, told by someone who has done it.</p><span class="s-by">Margaret Koziel, MD</span></div></li>
-      <li><span class="s-date">Oct 28</span><div class="s-body"><h3>Consulting, policy, and reimbursement</h3><p>The business side that decides whether a good idea ever reaches patients.</p><span class="s-by">Amar Vadhera, MD, and an invited strategy consultant</span></div></li>
-      <li><span class="s-date">Nov 11</span><div class="s-body"><h3>Digital health, diagnostics, and venture capital</h3><p>A founder and an investor, plus a live critique of student pitches.</p><span class="s-by">Invited founder and venture investor</span></div></li>
-      <li><span class="s-date">Dec 2</span><div class="s-body"><h3>Boston networking night</h3><p>An off-site evening in Boston/Cambridge, paired with a candid look at startups that failed and why.</p><span class="s-by">Student leaders and invited founders</span></div></li>
+      <li><span class="s-num">01</span><div class="s-body"><span class="s-date">Sep 16</span><h3>The healthcare innovation landscape</h3><p>Where the field sits, and a working primer on the business model canvas.</p><span class="s-by">Nathaniel Hafer, PhD</span></div></li>
+      <li><span class="s-num">02</span><div class="s-body"><span class="s-date">Sep 30</span><h3>Drug discovery and the pharmaceutical path</h3><p>How a therapeutic actually gets made, and how that differs from biotech.</p><span class="s-by">Alan Jacobson, PhD · co-developer of Ataluren</span></div></li>
+      <li><span class="s-num">03</span><div class="s-body"><span class="s-date">Oct 14</span><h3>Physician as founder</h3><p>Building in biotech and medical devices, told by someone who has done it.</p><span class="s-by">Margaret Koziel, MD</span></div></li>
     </ol>
-    <p class="prog-note">This is the planned roster. The team confirms each speaker closer to the date and keeps a backup list of comparable guests, so the lineup may shift.</p>
   </div>
 </section>
 
-<!-- Team -->
-<section id="team">
+<!-- Network preview -->
+<section class="band">
   <div class="wrap">
-    <div class="section-head">
-      <p class="kicker">Who runs it</p>
-      <h2>Team</h2>
+    <div class="section-top">
+      <div>
+        <p class="kicker">The point</p>
+        <h2>The point is the network</h2>
+      </div>
+      <a class="more" href="network.html">See the ecosystem</a>
     </div>
-    <div class="team-grid">
-      <div class="person lead">
-        <div class="p-avatar">NH</div>
-        <div class="p-name">Nathaniel Hafer, PhD</div>
-        <div class="p-role">Faculty sponsor · UMass Chan Medical School</div>
-      </div>
-      <div class="person">
-        <div class="p-avatar">SH</div>
-        <div class="p-name">Sasha Hussain</div>
-        <div class="p-role">Student lead · Primary contact</div>
-      </div>
-      <div class="person">
-        <div class="p-avatar">RK</div>
-        <div class="p-name">Rahul Kumar</div>
-        <div class="p-role">Student lead</div>
-      </div>
-      <div class="person">
-        <div class="p-avatar">JY</div>
-        <div class="p-name">Jielu Yu</div>
-        <div class="p-role">Student lead</div>
-      </div>
+    <p class="section-intro" style="margin-bottom:28px;max-width:60ch;">Every session ends over dinner, in a room worth being in. You leave with real contacts across the Massachusetts and New England innovation ecosystem, the kind you can call during residency and after.</p>
+    <div class="net-grid">
+      <div class="net-card"><span class="net-tag">People</span><h3>Physician-founders and investors</h3><p>Doctors who have started companies, and the people who fund them, talking candidly about what the path looks like.</p></div>
+      <div class="net-card"><span class="net-tag">Institutions</span><h3>Regional schools</h3><p>Student innovation groups we aim to connect with at Harvard Medical School, Boston University, Tufts, and UMass Lowell engineering.</p></div>
+      <div class="net-card"><span class="net-tag">Community</span><h3>Nucleate and incubators</h3><p>An introduction to the wider bio-entrepreneurship community, plus the incubators, accelerators, and tech-transfer offices where ideas start.</p></div>
     </div>
   </div>
 </section>
 
-<!-- Join -->
-<section id="join" class="band join-band">
-  <div class="wrap join-inner">
+<!-- Showcase teaser -->
+<section>
+  <div class="wrap">
+    <div class="section-top">
+      <div>
+        <p class="kicker">Student showcase</p>
+        <h2>Your idea, in front of the room</h2>
+      </div>
+      <a class="more" href="showcase.html">About the showcase</a>
+    </div>
+    <p class="section-intro" style="max-width:60ch;">The elective is not only about listening. Students who want to will be able to bring a clinical observation, sketch a concept, and present it to founders, investors, and peers across the region. The first showcase runs in the Fall 2026 cohort.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="wrap cta-inner">
     <p class="kicker">Get involved</p>
     <h2>Join the first cohort</h2>
-    <p class="join-copy">Open to T.H. Chan School of Medicine students for Fall 2026, capped at 25. Show up for five of the six evenings and turn in short reflections, and you earn a Certificate of Completion in Medical Entrepreneurship &amp; Innovation. The bigger payoff is the room you get to be in.</p>
-    <p class="join-copy">Want in, or just want to hear more? Email Sasha and we will add you to the list.</p>
-    <a class="btn btn-solid btn-lg" href="mailto:Sasha.Hussain3@umassmed.edu?subject=Medical%20Entrepreneurship%20OEE">Email to join</a>
-    <p class="join-fine">Sasha Hussain · Sasha.Hussain3@umassmed.edu</p>
+    <p>Open to T.H. Chan School of Medicine students for Fall 2026, capped at 25. Come to five of the six evenings, keep a short reflection, and sketch one business model canvas to earn a certificate of completion. The bigger payoff is the room.</p>
+    <a class="btn btn-solid btn-lg" href="join.html">How to join</a>
+    <p class="cta-fine">Questions? Email Sasha Hussain, Sasha.Hussain3@umassmed.edu</p>
   </div>
 </section>
 
 </main>
 
 <footer class="site-foot">
-  <div class="wrap foot-inner">
-    <div>
-      <strong>Medical Entrepreneurship &amp; Innovation OEE</strong>
-      <p>An Optional Enrichment Elective at UMass Chan Medical School, Worcester, Massachusetts. Faculty sponsor: Nathaniel Hafer, PhD.</p>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="aff"><strong>Medical Entrepreneurship &amp; Innovation OEE</strong><p>An Optional Enrichment Elective at UMass Chan Medical School, Worcester, Massachusetts. Faculty sponsor: Nathaniel Hafer, PhD.</p></div>
+      <nav class="foot-nav" aria-label="Pages">
+        <a href="about.html">About</a>
+        <a href="program.html">Program</a>
+        <a href="network.html">Network</a>
+        <a href="showcase.html">Showcase</a>
+        <a href="team.html">Team</a>
+        <a href="join.html">Join</a>
+      </nav>
+      <nav class="foot-nav" aria-label="Elsewhere">
+        <a href="mailto:Sasha.Hussain3@umassmed.edu">Contact</a>
+        <a href="https://nucleate.org/" target="_blank" rel="noopener">Nucleate</a>
+        <a href="https://www.umassmed.edu/ccts/" target="_blank" rel="noopener">UMass CCTS</a>
+      </nav>
     </div>
-    <nav class="foot-links">
-      <a href="#about">About</a>
-      <a href="#network">The network</a>
-      <a href="#program">Program</a>
-      <a href="#team">Team</a>
-      <a href="#join">Join</a>
-    </nav>
+    <div class="foot-fine">© 2026 Medical Entrepreneurship &amp; Innovation OEE · UMass Chan Medical School</div>
   </div>
-  <div class="wrap foot-fine">© 2026 Medical Entrepreneurship &amp; Innovation OEE</div>
 </footer>
 
-<script>
-(function () {
-  var t = document.querySelector('.nav-toggle'), links = document.getElementById('nav-links');
-  if (t && links) t.addEventListener('click', function () {
-    var open = links.classList.toggle('open');
-    t.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-  links && links.addEventListener('click', function (e) { if (e.target.tagName === 'A') links.classList.remove('open'); });
-
-  if (!window.matchMedia || !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    if ('IntersectionObserver' in window) {
-      var els = document.querySelectorAll('.net-card, .session, .sessions li, .person, .col-body, .section-head');
-      els.forEach(function (el) { el.classList.add('reveal'); });
-      var io = new IntersectionObserver(function (ents) {
-        ents.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
-      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-      els.forEach(function (el) { io.observe(el); });
-    }
-  }
-})();
-</script>
+<script src="site.js?v=2"></script>
+<script src="net.js?v=2"></script>
 </body>
 </html>
