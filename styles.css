@@ -193,6 +193,12 @@ section{padding:clamp(52px,7.5vw,92px) 0}
 .person .p-name{font-family:var(--serif);font-size:19px;font-weight:500;color:var(--navy)}
 .person .p-role{font-size:13px;color:var(--slate);margin-top:4px;line-height:1.45}
 .person.lead .avatar{background:radial-gradient(125% 120% at 28% 18%,rgba(255,255,255,.2),transparent 55%),linear-gradient(150deg,#061F4D,#2F3CB0 120%)}
+.person.lead .p-name{font-size:21px}
+.team-grid.g3{grid-template-columns:repeat(3,1fr)}
+.team-grid.g1{grid-template-columns:minmax(0,300px)}
+.p-social{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-size:12.5px;color:var(--peri-ink);font-weight:600}
+.p-social svg{width:15px;height:15px;flex:none}
+.p-social:hover{text-decoration:underline}
 
 /* showcase placeholders */
 .show-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
