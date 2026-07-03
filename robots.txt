@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rahulkumarr18.github.io/oee-medical-entrepreneurship/sitemap.xml
