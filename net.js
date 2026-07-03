@@ -77,18 +77,6 @@
         if (isRoute) { ctx.strokeStyle = 'rgba(46,211,255,0.55)'; ctx.lineWidth = 2.2; }
         else { ctx.strokeStyle = 'rgba(88,104,234,' + (hub ? da + 0.05 : da) + ')'; ctx.lineWidth = hub ? 1.3 : 1; }
         ctx.beginPath(); ctx.moveTo(a.px, a.py); ctx.lineTo(b.px, b.py); ctx.stroke();
-        if (!reduce) {
-          var count = isRoute ? 2 : 1;
-          for (var pu = 0; pu < count; pu++) {
-            var prog = ((t * (isRoute ? 0.00022 : 0.00015)) + eo[oi] * 0.17 + pu / count) % 1;
-            var mx = a.px + (b.px - a.px) * prog, my = a.py + (b.py - a.py) * prog;
-            var rr = isRoute ? 6 : 4.5;
-            var g = ctx.createRadialGradient(mx, my, 0, mx, my, rr);
-            g.addColorStop(0, 'rgba(46,211,255,0.95)'); g.addColorStop(1, 'rgba(46,211,255,0)');
-            ctx.fillStyle = g; ctx.beginPath(); ctx.arc(mx, my, rr, 0, 6.283); ctx.fill();
-            ctx.fillStyle = 'rgba(46,211,255,0.95)'; ctx.beginPath(); ctx.arc(mx, my, isRoute ? 2 : 1.5, 0, 6.283); ctx.fill();
-          }
-        }
       }
 
       // nodes, back to front
