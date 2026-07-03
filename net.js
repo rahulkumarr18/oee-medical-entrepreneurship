@@ -1,18 +1,19 @@
-/* Hero + Network map: a living map of the healthcare-innovation ecosystem the
-   elective connects into. UMass Chan sits center-left; the Boston / Cambridge
-   corridor spreads to the right; national affiliations (UCSF, its labs, Cisco)
-   sit to the left. Nodes hold stable positions and only sway gently, so labels
-   stay readable. Pure canvas 2D with a light perspective projection, independent
-   X/Y spread, a highlighted UMass-Chan-to-Boston route, and label-collision
-   avoidance. Honors prefers-reduced-motion with a single static frame. */
+/* Hero + Network map: a living map of the medical entrepreneurship incubator.
+   Worcester anchors the academic track, Boston / Cambridge is the regional
+   stage, and project teams, speakers, professors, sponsors, incubators, and
+   national affiliations orbit around them. Nodes hold stable positions and
+   only sway gently, so labels stay readable. Pure canvas 2D with a light
+   perspective projection, independent X/Y spread, a highlighted Worcester to
+   Boston route, and label-collision avoidance. Honors prefers-reduced-motion
+   with a single static frame. */
 (function () {
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // west(-x) .. east(+x); north(-y) .. south(+y); z is depth.
   // ldir picks the label direction; 'auto' fans it radially outward.
   var NODES = [
-    { x: -0.40, y:  0.06, z:  0.14, label: 'UMass Chan · Worcester', kind: 'hub',       ldir: 'below', key: true },
-    { x:  0.52, y:  0.02, z: -0.06, label: 'Boston / Cambridge',      kind: 'hub',       ldir: 'below', key: true },
+    { x: -0.44, y:  0.05, z:  0.14, label: 'Worcester · UMass Chan',  kind: 'hub',       ldir: 'below', key: true },
+    { x:  0.54, y:  0.02, z: -0.06, label: 'Boston / Cambridge',      kind: 'hub',       ldir: 'below', key: true },
     { x:  0.80, y: -0.44, z:  0.12, label: 'Harvard Medical',         kind: 'school',    ldir: 'up',    key: true },
     { x:  0.96, y: -0.06, z: -0.16, label: 'Mass General',            kind: 'school',    ldir: 'left' },
     { x:  0.72, y:  0.42, z:  0.06, label: 'Mass Eye and Ear',        kind: 'school',    ldir: 'below' },
@@ -20,21 +21,24 @@
     { x:  0.50, y: -0.58, z:  0.02, label: 'Tufts',                   kind: 'school',    ldir: 'up' },
     { x:  0.96, y:  0.66, z:  0.14, label: 'Boston University',       kind: 'school',    ldir: 'left' },
     { x:  0.24, y: -0.76, z: -0.08, label: 'UMass Lowell',            kind: 'school',    ldir: 'up' },
-    { x:  0.34, y:  0.74, z: -0.18, label: 'Harvard Business School', kind: 'community', ldir: 'below' },
+    { x:  0.34, y:  0.74, z: -0.18, label: 'HBS healthcare clubs',    kind: 'community', ldir: 'below' },
     { x: -0.02, y:  0.62, z:  0.22, label: 'Nucleate',                kind: 'community', ldir: 'below', key: true },
     { x: -0.44, y:  0.60, z:  0.04, label: 'Incubators',              kind: 'community', ldir: 'below' },
-    { x:  0.08, y: -0.34, z:  0.30, label: 'Physician-founders',      kind: 'role',      ldir: 'up',    key: true },
+    { x:  0.06, y: -0.34, z:  0.30, label: 'Physician-founders',      kind: 'role',      ldir: 'up',    key: true },
     { x:  0.30, y:  0.30, z: -0.30, label: 'Investors',               kind: 'role',      ldir: 'right', key: true },
-    { x: -0.62, y:  0.30, z:  0.00, label: 'Student teams',           kind: 'role',      ldir: 'below' },
+    { x: -0.68, y:  0.30, z:  0.00, label: 'Project teams',           kind: 'role',      ldir: 'below', key: true },
     { x: -0.92, y: -0.18, z: -0.12, label: 'UCSF',                    kind: 'school',    ldir: 'right', key: true },
     { x: -0.86, y:  0.30, z:  0.18, label: 'COSI Lab · UCSF',         kind: 'school',    ldir: 'below' },
     { x: -0.34, y: -0.64, z: -0.10, label: 'The Tensor Lab',          kind: 'school',    ldir: 'up' },
-    { x: -0.66, y: -0.50, z:  0.10, label: 'Cisco',                   kind: 'community', ldir: 'up',    key: true }
+    { x: -0.66, y: -0.50, z:  0.10, label: 'Cisco',                   kind: 'community', ldir: 'up',    key: true },
+    { x:  0.00, y: -0.72, z:  0.10, label: 'Professors',              kind: 'role',      ldir: 'up',    key: true },
+    { x: -0.12, y:  0.36, z: -0.22, label: 'Speakers',                kind: 'role',      ldir: 'below' },
+    { x:  0.64, y: -0.78, z:  0.18, label: 'Boston salons',           kind: 'community', ldir: 'up',    key: true }
   ];
   var EDGES = [
-    [0,1],[0,8],[0,10],[0,11],[0,12],[0,13],[0,14],[0,15],[0,16],[0,17],[0,18],
-    [1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,9],[1,10],[1,12],[1,13],
-    [2,3],[3,5],[2,6],[9,13],[15,16],[15,17],[12,13],[10,11],[6,8],[4,5]
+    [0,1],[0,8],[0,10],[0,11],[0,12],[0,13],[0,14],[0,15],[0,16],[0,17],[0,18],[0,19],[0,20],
+    [1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,9],[1,10],[1,12],[1,13],[1,19],[1,20],[1,21],
+    [2,3],[3,5],[2,6],[9,13],[15,16],[15,17],[12,13],[10,11],[6,8],[4,5],[14,20],[12,19],[19,21]
   ];
   var ROUTE = [0, 1]; // the UMass Chan -> Boston/Cambridge spine
 

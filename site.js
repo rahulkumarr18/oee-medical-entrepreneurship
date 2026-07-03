@@ -38,7 +38,7 @@
   // scroll reveals
   if (!reduce && 'IntersectionObserver' in window) {
     var els = Array.prototype.slice.call(document.querySelectorAll(
-      '.section-head, .manifesto p, .net-card, .stop, .checks li, .person, .show-card, .collab, .prose, .grid-2 > *, .cta-inner'
+      '.section-head, .section-top, .manifesto p, .net-card, .feature-card, .audience-card, .stop, .checks li, .person, .show-card, .collab, .prose, .grid-2 > *, .spotlight-grid > *, .cta-inner'
     ));
     els.forEach(function (el, i) {
       el.classList.add('reveal');
