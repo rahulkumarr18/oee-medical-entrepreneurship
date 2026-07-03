@@ -127,6 +127,11 @@
         var lab = labelPos(n2, p2);
         var w = ctx.measureText(n2.label).width + 8, h = 16;
         var bx = lab.align === 'right' ? lab.x - w : (lab.align === 'center' ? lab.x - w / 2 : lab.x);
+        // keep labels inside the canvas
+        var shift = 0;
+        if (bx < 4) shift = 4 - bx;
+        else if (bx + w > W - 4) shift = (W - 4) - (bx + w);
+        lab.x += shift; bx += shift;
         var box = { x: bx, y: lab.y - h / 2, w: w, h: h };
         if (n2.kind !== 'hub' && collides(box, placed)) continue;
         placed.push(box);
