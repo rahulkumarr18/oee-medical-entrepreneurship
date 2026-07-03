@@ -38,5 +38,5 @@ python3 -m http.server 8000
 
 ## Team
 
-Faculty sponsor: Nathaniel Hafer, PhD. Student leads: Sasha Hussain (primary
-contact), Rahul Kumar, and Jielu Yu.
+Faculty sponsor: Nathaniel Hafer, PhD. Student leads: Rahul Kumar (team lead,
+primary contact), Sasha Hussain, and Jielu Yu.
