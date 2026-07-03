@@ -79,11 +79,6 @@ p a:not(.btn){text-decoration:underline;text-underline-offset:2px}
 .hero-incubator .hero-fig{min-height:clamp(380px,46vw,620px);max-height:680px}
 .hero-incubator .facts{padding-bottom:0}
 
-.marquee-band{padding:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--navy);overflow:hidden}
-.ticker{display:flex;gap:42px;width:max-content;min-width:100%;padding:15px 0;animation:ticker 24s linear infinite;color:#DDE7FF;font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase}
-.ticker span{position:relative;white-space:nowrap}
-.ticker span::after{content:'';position:absolute;right:-25px;top:50%;width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan);transform:translateY(-50%)}
-@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* large network map (network page) */
 .map-hero{background:radial-gradient(120% 130% at 70% 10%,var(--wash),var(--mist) 60%,#fff 100%);border-bottom:1px solid var(--line)}
@@ -348,5 +343,4 @@ section{padding:clamp(52px,7.5vw,92px) 0}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .reveal,.hero .hl-line,.hero .sub,.hero .hero-cta,.hero .facts{opacity:1;transform:none;filter:none;transition:none}
-  .ticker{animation:none;transform:none}
 }
