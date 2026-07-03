@@ -1,14 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="MEI network mark">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Massachusetts Medical Entrepreneurship Incubator mark">
   <rect width="32" height="32" rx="7" fill="#052049"/>
-  <g stroke="#5868EA" stroke-width="1.6" stroke-linecap="round" opacity="0.85">
-    <line x1="10" y1="11" x2="16" y2="16"/>
-    <line x1="16" y1="16" x2="23" y2="10"/>
-    <line x1="16" y1="16" x2="12" y2="23"/>
-    <line x1="16" y1="16" x2="23" y2="22"/>
-  </g>
-  <circle cx="10" cy="11" r="2" fill="#6CB1F2"/>
-  <circle cx="23" cy="10" r="2" fill="#6CB1F2"/>
-  <circle cx="12" cy="23" r="2" fill="#5868EA"/>
-  <circle cx="23" cy="22" r="2" fill="#5868EA"/>
-  <circle cx="16" cy="16" r="3.4" fill="#2ED3FF"/>
+  <path d="M6 23.5V9.5l10 8.5 10-8.5v14" fill="none" stroke="#DCE9FF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="6" cy="23.5" r="2.4" fill="#6CB1F2"/>
+  <circle cx="6" cy="9.5" r="2.4" fill="#8FE3FF"/>
+  <circle cx="16" cy="18" r="2.8" fill="#2ED3FF"/>
+  <circle cx="26" cy="9.5" r="2.4" fill="#8FE3FF"/>
+  <circle cx="26" cy="23.5" r="2.4" fill="#6CB1F2"/>
 </svg>
