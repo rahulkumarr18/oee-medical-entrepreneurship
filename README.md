@@ -14,9 +14,10 @@ Massachusetts / New England healthcare innovation ecosystem.
 - `index.html` — home, with the animated network hero
 - `about.html` — the curricular gap and who it's for
 - `program.html` — the six Fall 2026 sessions and outcomes
-- `network.html` — the regional ecosystem
+- `network.html` — the regional and national ecosystem, with a grouped affiliations list
 - `showcase.html` — student showcase (Coming Fall 2026)
-- `team.html` — faculty sponsor, student leads, speakers
+- `partners.html` — sponsors, affiliations, and how support works
+- `team.html` — faculty sponsor, student leads, speakers (grouped by theme)
 - `join.html` — eligibility and contact
 
 ## Assets
@@ -31,9 +32,11 @@ python3 -m http.server 8000
 ```
 
 ## Adding headshots
-Team avatars currently show initials. To add a photo, replace the initials in a
-`.person .avatar` (in `team.html`) with `<img src="images/NAME.jpg" alt="NAME">`.
-Square images look best.
+Most team avatars already use photos; only Sasha Hussain currently shows initials
+(SH). To add a photo, replace the initials in a `.person .avatar` (in `team.html`)
+with `<img src="images/NAME.jpg" alt="" loading="lazy">` (existing photos also use
+.webp). Leave `alt` empty: the name sits in the adjacent `.p-name` text, so an empty
+alt avoids a screen reader announcing it twice. Square images look best.
 
 ## Team
 Faculty sponsor: Nathaniel Hafer, PhD (UMass Center for Clinical and Translational
