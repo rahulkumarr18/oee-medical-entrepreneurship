@@ -1,6 +1,6 @@
-# Massachusetts Medical Entrepreneurship Incubator
+# Medical Entrepreneurship & Innovation
 
-Website for a Massachusetts-facing medical entrepreneurship incubator with a
+Website for a Massachusetts-facing medical entrepreneurship program with a
 UMass Chan OEE track.
 
 Live: https://rahulkumarr18.github.io/oee-medical-entrepreneurship/
@@ -15,8 +15,8 @@ Cambridge.
 ## Pages
 
 - `index.html` - landing page with animated network hero
-- `about.html` - incubator purpose, audience, and Massachusetts scope
-- `program.html` - events, incubator cycle, and UMass Chan OEE track
+- `about.html` - program purpose, audience, and Massachusetts scope
+- `program.html` - events, program cycle, and UMass Chan OEE track
 - `network.html` - regional and national ecosystem map
 - `showcase.html` - pitch and project showcase format
 - `partners.html` - sponsors, hosts, affiliations, and support model

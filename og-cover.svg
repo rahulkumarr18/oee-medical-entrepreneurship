@@ -33,7 +33,7 @@
 
     <!-- headline -->
     <text x="86" y="228" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="74" fill="#FFFFFF">Medical Entrepreneurship</text>
-    <text x="86" y="312" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="74" fill="#FFFFFF">&amp; Innovation <tspan font-style="italic" fill="#8FE3FF">Incubator</tspan></text>
+    <text x="86" y="312" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="74" fill="#FFFFFF">&amp; <tspan font-style="italic" fill="#8FE3FF">Innovation</tspan></text>
 
     <!-- subtitle -->
     <text x="88" y="392" font-family="Helvetica, Arial, sans-serif" font-size="29" fill="#C9D6F5">A medical entrepreneurship community. Evenings with founders,</text>
